@@ -1,0 +1,10 @@
+*pycache*
+
+assets/
+bert-base-chinese-entity/
+build/
+downloads/
+outputs/
+tools/dpr.egg-info/
+test/
+tmp/

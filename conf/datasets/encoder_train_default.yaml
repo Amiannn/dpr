@@ -1,0 +1,113 @@
+# @package _group_
+
+nq_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-train
+
+nq_train_hn1:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-adv-hn-train
+
+nq_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-dev
+
+nq_train_small:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-train-small
+
+nq_train_small_shardneg:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-train-small-shardneg
+
+nq_dev_small:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-dev-small
+
+nq_train_8k:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-train-8k
+
+nq_dev_2k:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.nq-dev-2k
+
+nq_10k_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.scl.10k.nq-train-8k-scl
+
+nq_10k_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.scl.10k.nq-dev-2k-scl
+
+nq_100k_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.scl.100k.nq-train-80k-scl
+
+nq_100k_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.scl.100k.nq-dev-20k-scl
+
+nq_320k_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.scl.320k.nq-train-234k-scl
+
+nq_320k_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.scl.320k.nq-dev-58k-scl
+
+em_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.em.empath_retrieve_train
+
+em_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.em.empath_retrieve_valid
+
+aishell_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.aishell.aishell_entity_retrieval_dataset_train
+
+aishell_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.aishell.aishell_entity_retrieval_dataset_dev
+
+aishell_masked_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.aishell.aishell_entity_retrieval_dataset_train_masked
+
+aishell_masked_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.aishell.aishell_entity_retrieval_dataset_dev_masked
+
+trivia_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.trivia-train
+
+trivia_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.trivia-dev
+
+squad1_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.squad1-train
+
+squad1_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.squad1-dev
+
+webq_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.webq-train
+
+webq_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.webq-dev
+
+curatedtrec_train:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.curatedtrec-train
+
+curatedtrec_dev:
+  _target_: dpr.data.biencoder_data.JsonQADataset
+  file: data.retriever.curatedtrec-dev

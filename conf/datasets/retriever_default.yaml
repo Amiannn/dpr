@@ -1,0 +1,64 @@
+# @package _group_
+
+nq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-test
+  #query_special_suffix: '?'
+
+nq_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-train
+
+nq_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.nq-dev
+
+# small
+nq_dev_small:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/nq-dev-small.csv
+
+nq_train_small:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/nq-train-small.csv
+
+nq_train_small_shardneg:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/nq-train-small.csv
+
+nq_dev_2k:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/nq-dev-2k.csv
+
+nq_10k_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/scl/nq-dev-2k.csv
+
+nq_100k_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/scl/nq-dev-20k.csv
+
+nq_320k_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/retriever/qas/scl/nq-dev-58k.csv
+
+trivia_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-test
+
+trivia_train:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-train
+
+trivia_dev:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.trivia-dev
+
+webq_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.webq-test
+
+curatedtrec_test:
+  _target_: dpr.data.retriever_data.CsvQASrc
+  file: data.retriever.qas.curatedtrec-test
+

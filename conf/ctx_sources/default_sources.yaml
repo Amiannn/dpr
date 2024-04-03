@@ -1,0 +1,31 @@
+# @package _group_
+
+dpr_wiki:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: data.wikipedia_split.psgs_w100
+  id_prefix: 'wiki:'
+
+dpr_wiki_small:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/wikipedia_split/psgs_w100_small_dpr.tsv
+  id_prefix: 'wiki:'
+
+dpr_wiki_70k:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/wikipedia_split/psgs_w100_70k.tsv
+  id_prefix: 'wiki:'
+
+dpr_wiki_10k:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/wikipedia_split/scl/docs_w32_10k.tsv
+  id_prefix: 'wiki:'
+
+dpr_wiki_100k:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/wikipedia_split/scl/docs_w32_100k.tsv
+  id_prefix: 'wiki:'
+  
+dpr_wiki_320k:
+  _target_: dpr.data.retriever_data.CsvCtxSrc
+  file: /share/nas165/amian/experiments/nlp/DPR/downloads/data/wikipedia_split/scl/docs_w32_320k.tsv
+  id_prefix: 'wiki:'
